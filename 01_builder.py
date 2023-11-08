@@ -1,11 +1,14 @@
 # Creational Pattern
 # Builder
 
+# When to use :
+# Use case    :
+
 # No need to select all the ingredients when the burger is created
 # We have more control on what is in the burger
 
 
-# Le burger is empty by default
+# The burger is empty by default
 class Burger:
     def __init__(self):
         self.buns = None

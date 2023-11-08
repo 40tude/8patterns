@@ -1,6 +1,8 @@
 # Creational Pattern
 # Factory
 
+# When to use :
+# Use case    : 
 
 # A burger is based on a list of ingredients
 class Burger:
@@ -10,8 +12,7 @@ class Burger:
     def print(self):
         print(self.ingredients)
 
-
-# The factory instanciate the burger and return it to usk
+# The factory instanciates the burger and return it to us
 class BurgerFactory:
     def createCheeseBurger(self):
         ingredients = ["bun", "cheese", "beef-patty"]
@@ -25,12 +26,12 @@ class BurgerFactory:
         ingredients = ["bun", "special-sauce", "veggie-patty"]
         return Burger(ingredients)
 
-
 # We create a factory
 burgerFactory = BurgerFactory()
 
 # We order the burger we want to the factory
-# We don't have access to all the detail about the ingredient etc.
-# To get more control on the making of => builder pattern
+# We don't have access to what the burger is made of : ingredients etc.
 myBurger = burgerFactory.createDeluxeBurger()
 myBurger.print()
+
+# To get more control on the making of => builder pattern
