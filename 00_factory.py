@@ -2,7 +2,8 @@
 # Factory
 
 # When to use :
-# Use case    : 
+# Use case    :
+
 
 # A burger is based on a list of ingredients
 class Burger:
@@ -11,6 +12,7 @@ class Burger:
 
     def print(self):
         print(self.ingredients)
+
 
 # The factory instanciates the burger and return it to us
 class BurgerFactory:
@@ -25,6 +27,7 @@ class BurgerFactory:
     def createVeganBurger(self):
         ingredients = ["bun", "special-sauce", "veggie-patty"]
         return Burger(ingredients)
+
 
 # We create a factory
 burgerFactory = BurgerFactory()
